@@ -65,7 +65,7 @@ open class BSImagePickerViewController : UINavigationController {
     
     var albumTitleView: AlbumTitleView = bundle.loadNibNamed("AlbumTitleView", owner: nil, options: nil)!.first as! AlbumTitleView
     
-    static let public bundle: Bundle = Bundle(path: Bundle(for: PhotosViewController.self).path(forResource: "BSImagePicker", ofType: "bundle")!)!
+    public static let bundle: Bundle = Bundle(path: Bundle(for: PhotosViewController.self).path(forResource: "BSImagePicker", ofType: "bundle")!)!
     
     lazy var photosViewController: PhotosViewController = {
         let vc = PhotosViewController(fetchResults: self.fetchResults,
