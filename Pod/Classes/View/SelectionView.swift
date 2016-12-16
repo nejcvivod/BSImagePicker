@@ -25,8 +25,8 @@ import UIKit
 /**
 Used as an overlay on selected cells
 */
-@IBDesignable final class SelectionView: UIView {
-    var selectionString: String = "" {
+@IBDesignable open class SelectionView: UIView {
+    public var selectionString: String = "" {
         didSet {
             if selectionString != oldValue {
                 setNeedsDisplay()
@@ -34,7 +34,7 @@ Used as an overlay on selected cells
         }
     }
     
-    var settings: BSImagePickerSettings = Settings()
+    public var settings: BSImagePickerSettings = Settings()
     
     override func draw(_ rect: CGRect) {
         //// General Declarations
