@@ -26,10 +26,10 @@ import Photos
 /**
 The photo cell.
 */
-final class PhotoCell: UICollectionViewCell {
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var selectionOverlayView: UIView!
-    @IBOutlet weak var selectionView: SelectionView!
+open class PhotoCell: UICollectionViewCell {
+    @IBOutlet weak public var imageView: UIImageView!
+    @IBOutlet weak public var selectionOverlayView: UIView!
+    @IBOutlet weak public var selectionView: SelectionView!
     
     weak var asset: PHAsset?
     var settings: BSImagePickerSettings {
