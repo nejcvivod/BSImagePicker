@@ -41,7 +41,7 @@ open class PhotoCell: UICollectionViewCell {
         }
     }
     
-    public var selectionString: String {;
+    public var selectionString: String {
         get {
             return selectionView.selectionString
         }
