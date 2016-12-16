@@ -36,7 +36,7 @@ Used as an overlay on selected cells
     
     public var settings: BSImagePickerSettings = Settings()
     
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()
         
