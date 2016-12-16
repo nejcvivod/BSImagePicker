@@ -32,7 +32,7 @@ open class PhotoCell: UICollectionViewCell {
     @IBOutlet weak public var selectionView: SelectionView!
     
     weak var asset: PHAsset?
-    var settings: BSImagePickerSettings {
+    public var settings: BSImagePickerSettings {
         get {
             return selectionView.settings
         }
@@ -41,7 +41,7 @@ open class PhotoCell: UICollectionViewCell {
         }
     }
     
-    var selectionString: String {
+    public var selectionString: String {;
         get {
             return selectionView.selectionString
         }
@@ -51,7 +51,7 @@ open class PhotoCell: UICollectionViewCell {
         }
     }
     
-    var photoSelected: Bool = false {
+    public var photoSelected: Bool = false {
         didSet {
             let hasChanged = photoSelected != oldValue
             if UIView.areAnimationsEnabled && hasChanged {
